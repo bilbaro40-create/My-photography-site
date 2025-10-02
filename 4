@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services - My Photography</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">MyPhoto</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Services Section -->
+  <section class="services">
+    <h2>My Services</h2>
+    <p>Explore the photography packages I offer to capture your moments beautifully.</p>
+
+    <div class="services-container">
+      <div class="service-card">
+        <img src="images/wedding.jpg" alt="Wedding">
+        <h3>Wedding Photography</h3>
+        <p>From pre-wedding shoots to the big day, I’ll capture every magical moment.</p>
+        <span class="price">From $500</span>
+      </div>
+
+      <div class="service-card">
+        <img src="images/portrait.jpg" alt="Portrait">
+        <h3>Portrait Sessions</h3>
+        <p>Personal portraits, family sessions, or creative lifestyle shoots tailored for you.</p>
+        <span class="price">From $150</span>
+      </div>
+
+      <div class="service-card">
+        <img src="images/event.jpg" alt="Event">
+        <h3>Event Coverage</h3>
+        <p>Professional coverage for birthdays, corporate events, and special occasions.</p>
+        <span class="price">From $300</span>
+      </div>
+
+      <div class="service-card">
+        <img src="images/studio.jpg" alt="Studio">
+        <h3>Studio Photography</h3>
+        <p>High-quality studio shoots with lighting and backdrops of your choice.</p>
+        <span class="price">From $200</span>
+      </div>
+    </div>
+  </section>
+</body>
+</html>/* Services Section */
+.services {
+  padding: 100px 50px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.services p {
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.service-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+}
+
+.service-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.service-card h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.service-card p {
+  color: #555;
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.price {
+  font-weight: bold;
+  color: #c59d5f;
+  font-size: 16px;
+}
